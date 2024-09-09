@@ -108,7 +108,7 @@ header nav .m-bar i {
         color: white;
     }
     header nav ul {
-        display: flex;
+        display: none;
         z-index: -1;
         opacity: 0;
         flex-direction: column;
@@ -120,10 +120,7 @@ header nav .m-bar i {
         background-color: #2b2640;
         transition: 0.3s;
     }
-    nav .m-bar:hover ul{
-        z-index: 100;
-        opacity: 1;
-    }
+    
     header nav ul li {
         padding: 30px;
     }
