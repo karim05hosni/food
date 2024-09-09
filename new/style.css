@@ -69,7 +69,10 @@ header h1 {
     text-transform: capitalize;
 }
 header nav {
-    margin: auto 0;
+   margin: auto 0;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
 }
 header nav ul {
     display: flex;
@@ -98,8 +101,27 @@ header nav ul li a {
     color: white;
     font-weight:500;
 }
-
-    
+     @media (min-width: 768px) {
+    header nav ul {
+        display: none;
+        z-index: -1;
+        opacity: 0;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: #2b2640;
+        transition: 0.3s;
+    }}
+    nav .m-bar:hover ul{
+        z-index: 100;
+        opacity: 1;
+    }
+    header nav ul li {
+        padding: 30px;
+    }
 
 }
 /* end header */
