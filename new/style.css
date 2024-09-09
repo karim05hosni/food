@@ -98,15 +98,7 @@ header nav ul li a {
     color: white;
     font-weight:500;
 }
-header nav .m-bar i {
-    display: none;
-}
-@media (max-width: 768px) {
-    header nav .m-bar i {
-        display:block ;
-        font-size: 1.2rem;
-        color: white;
-    }
+
     header nav ul {
         display: flex;
         z-index: -1;
